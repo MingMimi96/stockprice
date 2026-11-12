@@ -1,0 +1,73 @@
+{
+  "settings": {
+    "ntfy_topic": "",
+    "check_interval_min": 5,
+    "desktop_notify": true
+  },
+  "rules": [
+    {
+      "id": "spy-dd10",
+      "symbol": "SPY",
+      "type": "drawdown",
+      "value": 10.0,
+      "enabled": true,
+      "note": "Correction - potential buying opportunity"
+    },
+    {
+      "id": "qqq-dd15",
+      "symbol": "QQQ",
+      "type": "drawdown",
+      "value": 15.0,
+      "enabled": true,
+      "note": "Deeper Nasdaq pullback"
+    },
+    {
+      "id": "spy-drop2",
+      "symbol": "SPY",
+      "type": "daily_drop",
+      "value": 2.0,
+      "enabled": true,
+      "note": "Large one-day sell-off"
+    },
+    {
+      "id": "qqq-drop3",
+      "symbol": "QQQ",
+      "type": "daily_drop",
+      "value": 3.0,
+      "enabled": true,
+      "note": "Large one-day sell-off"
+    },
+    {
+      "id": "spy-ma200",
+      "symbol": "SPY",
+      "type": "cross_below_ma200",
+      "value": null,
+      "enabled": true,
+      "note": "Long-term trend risk"
+    },
+    {
+      "id": "spy-death",
+      "symbol": "SPY",
+      "type": "death_cross",
+      "value": null,
+      "enabled": true,
+      "note": "Trend warning"
+    },
+    {
+      "id": "spy-golden",
+      "symbol": "SPY",
+      "type": "golden_cross",
+      "value": null,
+      "enabled": true,
+      "note": "Trend recovery"
+    },
+    {
+      "id": "test-spy-1",
+      "symbol": "SPY",
+      "type": "price_above",
+      "value": 1.0,
+      "enabled": false,
+      "note": "TEST rule - always fires when enabled"
+    }
+  ]
+}

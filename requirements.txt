@@ -1,0 +1,8 @@
+yfinance>=0.2.54
+pandas>=2.2
+numpy>=1.26
+streamlit>=1.37
+plotly>=5.22
+plyer>=2.1
+requests>=2.31
+tzdata>=2024.1
